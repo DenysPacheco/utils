@@ -1,0 +1,350 @@
+# Project Folders Creation Script
+
+Script to auto-create default folder and files for projects.
+
+## Structure
+
+### proj
+  
+<pre>
+project/
+├── Css/
+│   └── style.css
+├── Js/
+│   └── app.js
+├── Static/
+│   ├── Images/
+│   └── Packages/
+└── Templates/
+    └── index.html
+</pre>
+
+---
+
+### proj-alt
+
+<br>
+<ul class="ascii">
+    <li>project/
+        <ul>
+            <li>css/
+                <ul>
+                    <li>style.css</li>
+                </ul>
+            </li>
+            <li>js/
+                <ul>
+                    <li>app.js</li>
+                </ul>
+            </li>
+            <li>pages/
+                <ul>
+                    <li>css/</li>
+                    <li>js/</li>
+                    <li>html/</li>
+                    <li>images/</li>
+                </ul>
+            </li>
+            <li>static/
+                <ul>
+                    <li>images/</li>
+                    <li>packages/</li>
+                </ul>
+                    <li>index.html</li>
+                    <li>README.md</li>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<style>
+    h1,
+    h2,
+    pre,
+    div {
+        font-family: monospace;
+        font-size: 1em;
+        line-height: 1.1;
+        -webkit-text-size-adjust: none;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 1.25em;
+    }
+
+    ul.ascii,
+    ul.ascii ul {
+        margin-left: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+
+    ul.ascii li {
+        margin: 0;
+        padding: 0;
+    }
+
+    /*level 1*/
+    ul.ascii>li::before {
+        content: "";
+    }
+
+    /*level 2*/
+    ul.ascii>li>ul>li::before {
+        content: "├──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child::before {
+        content: "└──\00a0";
+    }
+
+    /*level 3*/
+    ul.ascii>li>ul>li>ul>li::before {
+        content: "│\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li>ul>li:last-child::before {
+        content: "│\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li::before {
+        content: "\00a0\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li:last-child::before {
+        content: "\00a0\00a0\00a0\00a0└──\00a0";
+    }
+
+    /*level 4*/
+    ul.ascii>li>ul>li>ul>li>ul>li::before {
+        content: "│\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li>ul>li>ul>li:last-child::before {
+        content: "│\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li>ul>li:last-child>ul>li::before {
+        content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li>ul>li:last-child>ul>li:last-child::before {
+        content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li>ul>li::before {
+        content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li>ul>li:last-child::before {
+        content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li:last-child>ul>li::before {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li:last-child>ul>li:last-child::before {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+    }
+
+    /*level 5*/
+    ul.ascii>li>ul>li>ul>li>ul>li>ul>li::before {
+        content: "│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li>ul>li>ul>li>ul>li:last-child::before {
+        content: "│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li>ul>li>ul>li:last-child>ul>li::before {
+        content: "│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li>ul>li>ul>li:last-child>ul>li:last-child::before {
+        content: "│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li>ul>li:last-child>ul>li>ul>li::before {
+        content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li>ul>li:last-child>ul>li>ul>li:last-child::before {
+        content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li>ul>li:last-child>ul>li:last-child>ul>li::before {
+        content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li>ul>li:last-child>ul>li:last-child>ul>li:last-child::before {
+        content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li>ul>li>ul>li::before {
+        content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li>ul>li>ul>li:last-child::before {
+        content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li>ul>li:last-child>ul>li::before {
+        content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li>ul>li:last-child>ul>li:last-child::before {
+        content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li:last-child>ul>li>ul>li::before {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li:last-child>ul>li>ul>li:last-child::before {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li::before {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child::before {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+    }
+
+    /*level 6*/
+    ul.ascii>li>ul>li>ul>li>ul>li>ul>li>ul>li::before {
+        content: "│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li>ul>li>ul>li>ul>li>ul>li:last-child::before {
+        content: "│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li>ul>li>ul>li>ul>li:last-child>ul>li::before {
+        content: "│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li>ul>li>ul>li>ul>li:last-child>ul>li:last-child::before {
+        content: "│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li>ul>li>ul>li:last-child>ul>li>ul>li::before {
+        content: "│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li>ul>li>ul>li:last-child>ul>li>ul>li:last-child::before {
+        content: "│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li>ul>li>ul>li:last-child>ul>li:last-child>ul>li::before {
+        content: "│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li>ul>li>ul>li:last-child>ul>li:last-child>ul>li:last-child::before {
+        content: "│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li>ul>li:last-child>ul>li>ul>li>ul>li::before {
+        content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li>ul>li:last-child>ul>li>ul>li>ul>li:last-child::before {
+        content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li>ul>li:last-child>ul>li>ul>li:last-child>ul>li::before {
+        content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li>ul>li:last-child>ul>li>ul>li:last-child>ul>li:last-child::before {
+        content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li>ul>li:last-child>ul>li:last-child>ul>li>ul>li::before {
+        content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li>ul>li:last-child>ul>li:last-child>ul>li>ul>li:last-child::before {
+        content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li::before {
+        content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child::before {
+        content: "│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li>ul>li>ul>li>ul>li::before {
+        content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li>ul>li>ul>li>ul>li:last-child::before {
+        content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li>ul>li>ul>li:last-child>ul>li::before {
+        content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li>ul>li>ul>li:last-child>ul>li:last-child::before {
+        content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li>ul>li:last-child>ul>li>ul>li::before {
+        content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li>ul>li:last-child>ul>li>ul>li:last-child::before {
+        content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li>ul>li:last-child>ul>li:last-child>ul>li::before {
+        content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li>ul>li:last-child>ul>li:last-child>ul>li:last-child::before {
+        content: "\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li:last-child>ul>li>ul>li>ul>li::before {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li:last-child>ul>li>ul>li>ul>li:last-child::before {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li:last-child>ul>li>ul>li:last-child>ul>li::before {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li:last-child>ul>li>ul>li:last-child>ul>li:last-child::before {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li>ul>li::before {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li>ul>li:last-child::before {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0│\00a0\00a0\00a0└──\00a0";
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li::before {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0├──\00a0"
+    }
+
+    ul.ascii>li>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child>ul>li:last-child::before {
+        content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0└──\00a0";
+    }
+</style>
+
+---
