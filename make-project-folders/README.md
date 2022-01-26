@@ -1,6 +1,6 @@
 # Project Folders Creation Script
 
-Script to auto-create default folder and files for projects.
+Script to auto-create default folders and files for projects based on my preference.
 
 ## Structure
 
