@@ -1,0 +1,15 @@
+#!/bin/bash
+FOLDERS=(Templates Css Js Static)
+folder=$1
+mkdir $folder
+
+for f in ${FOLDERS[*]}; do
+    mkdir "$folder"/"${f}"
+done
+
+mkdir "$folder"/"${FOLDERS[3]}"/Images
+mkdir "$folder"/"${FOLDERS[3]}"/Packages
+
+echo "!!!" >"$folder"/"${FOLDERS[0]}"/index.html
+echo "* {}" >"$folder"/"${FOLDERS[1]}"/style.css
+echo "console.log('this')" >"$folder"/"${FOLDERS[2]}"/app.js
