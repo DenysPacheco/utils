@@ -1,5 +1,10 @@
-#!/bin/sh
-mkdir $1
-cd $1
+#!/bin/bash
+
+# Just call the script with the name of the module
+
+MODULE=$1
+
+mkdir $MODULE
+cd $MODULE
 touch __init__.py
-touch $1
+touch $MODULE

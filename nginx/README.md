@@ -2,9 +2,7 @@
 
 This is a folder with what I consider to be important to the development of server applications with Nginx
 
-<a href='https://www.nginx.com/'>
-    <img src='./nginx.png' style='border-radius:2rem;'>
-</a>
+[![nginx](nginx.png)](https://www.nginx.com/)
 
 ## Items
 

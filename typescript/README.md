@@ -2,9 +2,7 @@
 
 A simple [typescript/node](https://www.npmjs.com/package/ts-node) structure folder as base for my projects
 
-<a href='https://www.npmjs.com/package/ts-node'>
-    <img src='./tsnode.svg' width='350px' height='auto' style='border-radius:2rem'>
-</a>
+[![ts-node](tsnode.svg)](https://www.npmjs.com/package/ts-node)
 
 ## Build
 

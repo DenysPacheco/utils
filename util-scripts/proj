@@ -1,15 +1,18 @@
 #!/bin/bash
-FOLDERS=(Templates Css Js Static)
-folder=$1
-mkdir $folder
 
-for f in ${FOLDERS[*]}; do
-    mkdir "$folder"/"${f}"
+# Just call the script with the name of the project
+
+TEMPLATES=(Templates Css Js Static)
+FOLDER=$1
+mkdir $FOLDER
+
+for f in ${TEMPLATES[*]}; do
+    mkdir "$FOLDER"/"${f}"
 done
 
-mkdir "$folder"/"${FOLDERS[3]}"/Images
-mkdir "$folder"/"${FOLDERS[3]}"/Packages
+mkdir "$FOLDER"/"${TEMPLATES[3]}"/Images
+mkdir "$FOLDER"/"${TEMPLATES[3]}"/Packages
 
-echo "!!!" >"$folder"/"${FOLDERS[0]}"/index.html
-echo "* {}" >"$folder"/"${FOLDERS[1]}"/style.css
-echo "console.log('this')" >"$folder"/"${FOLDERS[2]}"/app.js
+echo "!!!" >"$FOLDER"/"${TEMPLATES[0]}"/index.html
+echo "* {}" >"$FOLDER"/"${TEMPLATES[1]}"/style.css
+echo "console.log('this')" >"$FOLDER"/"${TEMPLATES[2]}"/app.js
