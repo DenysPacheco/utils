@@ -6,6 +6,8 @@ A bunch of scripts that I keep myself just for the boring stuff.
 
 Repetitive actions that are a pain to keep doing.
 
+Also some vscode scripts 😉️
+
 Basically, bash.
 
 [bash or sh?](https://stackoverflow.com/questions/5725296/difference-between-sh-and-bash)
