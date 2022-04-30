@@ -1,6 +1,6 @@
-source: 
+# Solve gigant node modules bundle size to production serve
 
-    https://tsh.io/blog/reduce-node-modules-for-better-performance/
+[source article - tsh.io](https://tsh.io/blog/reduce-node-modules-for-better-performance/)
 
 Items:
 
