@@ -76,5 +76,4 @@ Image Webp commands:
 see results
 `ls -lh`
 
-
 [Smashing Magazine article](https://www.smashingmagazine.com/2018/07/converting-images-to-webp/)
