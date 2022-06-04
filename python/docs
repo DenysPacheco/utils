@@ -1,0 +1,22 @@
+To auto make docs using docstrings in python use Sphinx
+
+sphinx site:
+https://www.sphinx-doc.org/en/master/
+
+vscode extension docstrings:
+https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring
+
+Sphinx quick setup:
+https://towardsdatascience.com/documenting-python-code-with-sphinx-554e1d6c4f6d
+
+also util stack:
+https://stackoverflow.com/questions/53668052/sphinx-cannot-find-my-python-files-says-no-module-named
+
+to push to ghpages and avoid jekyll problem:
+https://echorand.me/site/notes/articles/sphinx/static_html.html
+
+Remember:
+put 
+	if __name__ == "__main__":
+		main()
+so it doesn't run your code on `make html`
