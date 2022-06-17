@@ -45,9 +45,59 @@ i.e.: if it is seen by the viewr
 
 **Remember**: never link to the same page. Hurts the SEO score.
 
+`<base>` tag to make one link `<a>` tag configurations set
+
+ex.: `<base href="https://www.w3schools.com/" target="_blank">`
+
+[source article - w3](https://www.w3schools.com/TAgs/tryit.asp?filename=tryhtml_base_test)
+
 [source article - Medium](https://medium.com/sedeo/how-to-fix-target-blank-a-security-and-performance-issue-in-web-pages-2118eba1ce2f)
 
 [SEO article - matheusbavaresco](https://matheusbavaresco.com.br/seo/uso-rel-nofollow-rel-noopener-rel-noreferrer-rel-exteral/)
+
+---
+
+Natural html tags - COOL 🆒️ 😎️
+
+Natural dropdown
+
+    <details>
+      <summary>Epcot Center</summary>
+      <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+    </details>
+    
+ex.:
+
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+
+[source natural html dropdown - w3](https://www.w3schools.com/TAgs/tryit.asp?filename=tryhtml5_details)
+
+Natural loading bar
+
+    <label for="disk_d">Disk usage D:</label>
+    <meter id="disk_d" value="0.8">60%</meter>
+
+ex.:
+<div style='display:flex'>
+    <label for="disk_d">Disk usage D: &nbsp; </label>
+    <meter id="disk_d" value="0.8">60%</meter>
+</div>
+
+[source tag metter](https://www.w3schools.com/TAgs/tag_meter.asp)
+
+Natural progress
+
+    <label for="file">Downloading progress:</label>
+    <progress id="file" value="32" max="100"> 32% </progress>
+    
+ex.:
+<label for="file">Downloading progress:</label>
+<progress id="file" value="32" max="100"> 32% </progress>
+
+[source natural progress](https://www.w3schools.com/TAgs/tag_progress.asp)
 
 ---
 
