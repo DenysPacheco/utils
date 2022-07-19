@@ -37,11 +37,11 @@ i.e.: if it is seen by the viewr
 
 ---
 ### `<a>` Tags - redirects
-`target="_top" rel="noopener noreferrer"`
+`target="_blank" rel="noopener noreferrer"`
  on every `</a>` tag
     
-`target="_blank"`
- to new page
+`target="_top"`
+ to same page - beware SEO
 
 **Remember**: never link to the same page. Hurts the SEO score.
 
