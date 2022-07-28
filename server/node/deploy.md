@@ -1,12 +1,14 @@
 # Node tips
 
-### Node app manager
+## Node app manager
+
 Use to easily deploy, start or recover application
 
 [pm2](https://github.com/Unitech/pm2)
 
 As simples as:
-```
+
+```bash
 npm install -g pm2
 
 pm2 start app.js

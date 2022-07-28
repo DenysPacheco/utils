@@ -3,31 +3,31 @@
 > ### Best is to never forget.
 
 ### Minimize everything
-minify html, css and js to lower download chuncks, ergo faster load
+minify html, css and js to lower download chunks, ergo faster load
 
 --- 
 
 ### Load css before js
 
-preload:
+pre-load:
  ? does it works?
 
 `<link rel="preload" as="style" href="style.css">`
 
 use `defer` on all js scripts - *unless google apis?*
 
-> defer = 'adiar'
+> defer = 'delay'
 
 > exec after DOM rendering; async
 
-> donwload and exec async ? breaks css?
+> download and exec async ? breaks css?
 
 ---
 
 ### Images `loading="lazy"`
 
 Load images only if on screen; 
-i.e.: if it is seen by the viewr
+i.e.: if it is seen by the viewer
 
 **Remember**: make images smallest size possible
 
@@ -86,7 +86,7 @@ ex.:
     <meter id="disk_d" value="0.8">60%</meter>
 </div>
 
-[source tag metter](https://www.w3schools.com/TAgs/tag_meter.asp)
+[source tag meter](https://www.w3schools.com/TAgs/tag_meter.asp)
 
 Natural progress
 
@@ -105,7 +105,7 @@ ex.:
 
 Use Webp images format
 - more efficient on browser
-- less size than png (and jpeg), with transparency
+- smaller size than png (and jpeg), with transparency
 - ...
 - better?
 
@@ -113,14 +113,26 @@ Image Webp commands:
 
 **Mind**: lossless isn't good on big images (converge to bigger image size)
 
-- good and faster: 
--     cwebp -q 75 -alpha_q 25 source.png -o output.webp
+-o: output (otherwise it doesn't save)
 
-- good, but slow (doesn't work on big images):
--     cwebp -lossless -z 9 source.png -o output.webp
+-q: quality [0...100]
+-alpha_q: transparency [0...100] (for 0 use -noalpha)
+-m: compression method [0:fast...6:slowest] (6 better compression)
+-mt: multi-threading
 
-- better, but slower (mind big images, doesn't compress):
--     cwebp -lossless -m 6 -z 9 -q 100 source.png -o output.webp
+-lossless: lossless method (not very compressing)
+-z: lossless level [0:fast, ..., 9:slowest]
+
+- good and fast:
+-     cwebp -mt source.png -o output.webp
+
+- better and faster (no transparency, 60% quality, better compression):
+-     cwebp -m 6 -mt -q 60 -noalpha source.png -o output.webp
+
+- best, but slower:
+-     cwebp -z 9 -mt source.png -o output.webp
+
+Look at `cwebp -longhelp` for more options.
 
 **Tip**:
 see results

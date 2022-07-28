@@ -2,7 +2,7 @@
 
 ## Log info on app (Node) 
 
-Purpose: to gather info, metrics, usage & make analisys
+Purpose: to gather info, metrics, usage & make analysis
 
 [appsignal](https://blog.appsignal.com/2021/09/01/best-practices-for-logging-in-nodejs.html)
 

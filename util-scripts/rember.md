@@ -1,4 +1,6 @@
-# Tips to remember on server side actions
+# Scripts
+
+## Tips to remember on server side actions
 
 [source article](https://mediatemple.net/community/products/developer/115001168523/using-rsync-to-create-backups-and-sync-data)
 
@@ -19,7 +21,8 @@ rsync options:
 
 ---
 
-### rsyn with crontab to create scheduled backups
+### rsync with crontab to create scheduled backups
+
 cron rule template:
 
 ` * * * * command `
@@ -35,6 +38,7 @@ use tar to save compressed file (backup):
 ---
 
 ### ssh to run script to deploy?
+
 ssh to connect and run script to reload/start server service - bash script on production
 
 ssh to execute bash?
@@ -43,7 +47,7 @@ return number of success to render if completed?
 
 ---
 
-### clean before send:
+### clean before sen
 
 - temp files
 - .git

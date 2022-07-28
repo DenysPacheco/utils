@@ -1,4 +1,4 @@
-# Solve gigant node modules bundle size to production serve
+# Solve gigantic node modules bundle size to production serve
 
 [source article - tsh.io](https://tsh.io/blog/reduce-node-modules-for-better-performance/)
 
@@ -15,9 +15,9 @@ remember:
     npm install --dev => will only install "devDependencies"
 
 remove unnecessary files:
-	
+
     node-prune: https://github.com/tj/node-prune
-	
+
     modclean: https://github.com/ModClean/modclean
 
 see large modules with command:
