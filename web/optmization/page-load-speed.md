@@ -8,5 +8,6 @@
 
 [Google optimize web side speed - Google](https://developers.google.com/speed)
 
-
 [Web Dev giant list to speed - Web.dev](https://web.dev/fast/)
+
+[Terakeet - SEO huge list](https://terakeet.com/blog/seo-checklist/)
