@@ -10,4 +10,6 @@
 
 [Web Dev giant list to speed - Web.dev](https://web.dev/fast/)
 
-[Terakeet - SEO huge list](https://terakeet.com/blog/seo-checklist/)
+[Huge SEO check list - Terakeet](https://terakeet.com/blog/seo-checklist/)
+
+[Google SEO Guide - Google](https://developers.google.com/search/docs/beginner/seo-starter-guide)
