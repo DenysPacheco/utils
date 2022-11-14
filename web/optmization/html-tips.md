@@ -1,20 +1,21 @@
-# General html dev tips for a faster load speed and common practices
+# Html tips
 
-> ### Best is to never forget.
+General html dev tips for a faster load speed and common practices
 
-### Minimize everything
+> Best is to never forget.
+
+## Minimize everything
+
 minify html, css and js to lower download chunks, ergo faster load
 
---- 
-
-### Load css before js
+## Load css before js
 
 pre-load:
- ? does it works?
+? does it works?
 
 `<link rel="preload" as="style" href="style.css">`
 
-use `defer` on all js scripts - *unless google apis?*
+use `defer` on all js scripts - _unless google apis?_
 
 > defer = 'delay'
 
@@ -22,11 +23,9 @@ use `defer` on all js scripts - *unless google apis?*
 
 > download and exec async ? breaks css?
 
----
+## Images `loading="lazy"`
 
-### Images `loading="lazy"`
-
-Load images only if on screen; 
+Load images only if on screen;
 i.e.: if it is seen by the viewer
 
 **Remember**: make images smallest size possible
@@ -35,13 +34,13 @@ i.e.: if it is seen by the viewer
 
 [Developer Mozilla article](https://developer.mozilla.org/en-US/docs/Web/HTML/Link_types/preload)
 
----
-### `<a>` Tags - redirects
+## `<a>` Tags - redirects
+
 `target="_blank" rel="noopener noreferrer"`
- on every `</a>` tag
-    
+on every `</a>` tag
+
 `target="_top"`
- to same page - beware SEO
+to same page - beware SEO
 
 **Remember**: never link to the same page. Hurts the SEO score.
 
@@ -55,9 +54,7 @@ ex.: `<base href="https://www.w3schools.com/" target="_blank">`
 
 [SEO article - matheusbavaresco](https://matheusbavaresco.com.br/seo/uso-rel-nofollow-rel-noopener-rel-noreferrer-rel-exteral/)
 
----
-
-Natural html tags - COOL 🆒️ 😎️
+## Natural html tags - COOL 🆒️ 😎️
 
 Natural dropdown
 
@@ -65,7 +62,7 @@ Natural dropdown
       <summary>Epcot Center</summary>
       <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
     </details>
-    
+
 ex.:
 
 <details>
@@ -81,6 +78,7 @@ Natural loading bar
     <meter id="disk_d" value="0.8">60%</meter>
 
 ex.:
+
 <div style='display:flex'>
     <label for="disk_d">Disk usage D: &nbsp; </label>
     <meter id="disk_d" value="0.8">60%</meter>
@@ -92,18 +90,17 @@ Natural progress
 
     <label for="file">Downloading progress:</label>
     <progress id="file" value="32" max="100"> 32% </progress>
-    
+
 ex.:
 <label for="file">Downloading progress:</label>
 <progress id="file" value="32" max="100"> 32% </progress>
 
 [source natural progress](https://www.w3schools.com/TAgs/tag_progress.asp)
 
----
-
-### Webp
+## Webp
 
 Use Webp images format
+
 - more efficient on browser
 - smaller size than png (and jpeg), with transparency
 - ...

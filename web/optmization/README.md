@@ -5,5 +5,4 @@ Tips and sources about optimization that I like to remember to do on projects. A
 - [HTML tips](./html-tips.md)
 - [Page loading speed](./page-load-speed.md)
 - [Server configurations](./server-things.md)
-
 - [Webp](html-tips.md#webp)
