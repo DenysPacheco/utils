@@ -1,6 +1,6 @@
 # Logs
 
-## Log info on app (Node) 
+## Log info on app (Node)
 
 Purpose: to gather info, metrics, usage & make analysis
 

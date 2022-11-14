@@ -23,5 +23,3 @@ remove unnecessary files:
 see large modules with command:
 
     du -sh ./node_modules/* | sort -nr | grep '\dM.*'
-
-

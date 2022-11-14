@@ -8,7 +8,8 @@ Use to easily deploy, start or recover application
 
 As simples as:
 
-```bash
+```sh
+bash
 npm install -g pm2
 
 pm2 start app.js

@@ -15,5 +15,4 @@ This is a folder with what I consider to be important to the development of serv
 - [Flask & Gunicorn & Nginx (installation) - list](https://www.digitalocean.com/community/tutorial_collections/how-to-serve-flask-applvications-with-gunicorn-and-nginx)
 
 - [Resolve gigantic node modules](gigantic-node-modules)
-- > [source](https://tsh.io/blog/reduce-node-modules-for-better-performance/
-)
+- > [source](https://tsh.io/blog/reduce-node-modules-for-better-performance/)
