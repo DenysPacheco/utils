@@ -14,7 +14,6 @@ Auto generate docstrings on python with extension on vscode:
 
 [VSCode docstrings extension - Marketplace](https://marketplace.visualstudio.com/items?itemName=njpwerner.autodocstring)
 
-
 ## Sphinx
 
 [Sphinx docs](https://www.sphinx-doc.org/en/master/)
@@ -28,12 +27,15 @@ Auto generate docstrings on python with extension on vscode:
 [See this also util stack](https://stackoverflow.com/questions/53668052/sphinx-cannot-find-my-python-files-says-no-module-named)
 
 ### GhPages
+
 To push to ghpages and avoid jekyll problem
 [Echorand.me](https://echorand.me/site/notes/articles/sphinx/static_html.html)
 
 ### Remember:
-```
+
+```python
 if __name__ == "__main__":
     main()
 ```
+
 Put it on the main file so it doesn't run your code on `make html`, because of the imports
