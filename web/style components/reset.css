@@ -28,8 +28,20 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html{
+    font-size: 16px;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    overflow-y: auto;
+    -webkit-text-size-adjust: 100%;
+    word-break: normal;
+    tab-size: 4;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+}
 body {
-	line-height: 1;
+	line-height: 1.5;
+    overflow: hidden;
 }
 ol, ul {
 	list-style: none;
