@@ -20,4 +20,4 @@ colors background (dark mode):
 ## Tips
 
 - make lighter background on hover
-- no complete dark or black, soft dark blue
+- no complete dark or black, use soft dark blue/cold colors
