@@ -2,18 +2,38 @@
 
 ## Fonts archive
 
-Use [Google fonts](https://fonts.google.com/) for a variety of fonts.
+Use [Google fonts](https://fonts.google.com/) for a variety of fonts. Use `@import`inside a css file for general use.
+> `@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')`
 
-## Rounded Style fonts
+## Awesome Styled Fonts
 
-- Nunito
-- reef
+- Inter
+- Poppins
+- DM Sans
+- Roboto
+- Manrope
+- Nunito Sans
+- Raleway
+- Mulish
+- Montserrat
+- Jost
+- Sora
+- Lexend
+- Reef
 - Somatic-Rounded
 - Varela-Rounded
 - Comfortaa
-- culonite
+- Culonite
 
-## Example of composed fonts
+## Composed Fonts
+
+Usually, sites have fallback font styles where some letters are not covered by that font.
+
+Add at the end of them, something like:
+
+    ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto
+
+### Examples
 
 [hashnode](https://hashnode.com/)
 
@@ -27,23 +47,14 @@ Use [Google fonts](https://fonts.google.com/) for a variety of fonts.
 
     Elena,-apple-system,BlinkMacSystemFont,Roboto,roboto slab,droid serif,segoe ui,system-ui,Arial,sans-serif
 
-Other sites?
-
-    Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
-
-[digitalocean](https://www.digitalocean.com/community/tutorials/how-to-create-and-serve-webp-images-to-speed-up-your-website-pt)
-
-    "Epilogue", sans-serif
-
-[Instagram](https://www.instagram.com)
-
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
-
 ## Tips
 
 - don't use pure black on fonts
   > ([digitalocean](digitalocean.com) uses dark blue)
-- links on blue with underline - default design
+- pay attention to the spacing
+  > line-height in css
+- respect the [3:1 constrast ratio](https://www.getstark.co/blog/accessible-contrast-ratios-and-a-levels-explained/) - [check](https://contrastchecker.com/)
+- links on blue with underline - default design to UX
 
 ### Links
 
