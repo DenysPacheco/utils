@@ -2,6 +2,8 @@
 
 Good sites & tools to make aweesome assets and improve your design.
 
+## 🧰 Tools
+
 [Mesh Gradients](https://www.magicpattern.design/tools/mesh-gradients) - for backgrounds
 
 [Haikei App](https://app.haikei.app/) - for backgrounds, wallpapers and random svg's
@@ -12,13 +14,13 @@ Good sites & tools to make aweesome assets and improve your design.
 
 [Glassmorphism CSS Generator](https://css.glass/) - for glass effect
 
-## Animated Emojis <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f609/512.gif" alt="😉" width="32" height="32">
+## 💫 Image Editor (Free, Online & Good 👍)
+[Pixlr-X](https://pixlr.com/br/x/)
+
+## <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f609/512.gif" alt="😉" width="32" height="32"> Animated Emojis
 
 [Google fonts - animated emojis](https://googlefonts.github.io/noto-emoji-animation/)
 
-## Svg helper 🧰
+## 🛠️ Svg helper
 
 [SVG editor online](https://svgeditoronline.com/editor/)
-
-## Image Editor (Free, Online & Good 👍)
-[Pixlr-X](https://pixlr.com/br/x/)
