@@ -8,20 +8,20 @@ Use what you want or like, change or discard. Feel free to use however you like 
 
 ## Here, you will find ❗
 
-### Css
+### [Css](./css/)
 
 - [🎛️ Reset](./css/reset.css)
 - [🔘 Simple Reset](./css/simpleReset.css)
 - [🎚️ Switch](./css/switch.css)
 
-### Design
+### [Design](./design/)
 
 - [🎨 Colors tips](./design/colours.md)
 - [🖌️ Design tools](./design/tools.md)
 - [✍️ Fonting](./design/fonts.md)
 - [🦄 Icons](./design/icons.md)
 
-### Optmization
+### [Optmization](./optmization/)
 
 - [📜 Html](./optmization/html.md)
 - [🥏 Page Load Speed](./optmization/page-load-speed.md)

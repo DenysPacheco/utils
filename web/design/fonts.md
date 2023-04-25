@@ -66,8 +66,8 @@ Elena,-apple-system,BlinkMacSystemFont,Roboto,roboto slab,droid serif,segoe ui,s
   > ([digitalocean](https://www.digitalocean.com/) uses dark blue)
 - respect the [constrast ratio](https://www.getstark.co/blog/accessible-contrast-ratios-and-a-levels-explained/)
   - [contrast checker](https://contrastchecker.com/)
-- pay attention to the spacing, keep it at 1.5 line-height
-  > line-height in css
+- pay attention to the y-axis spacing in css
+  > line-height: 1.5
 - choose a typeface with tall letters (better readability)
 - define base css on root
 - links on blue with underline - default design to UX
