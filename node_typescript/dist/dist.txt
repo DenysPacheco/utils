@@ -1,2 +1,0 @@
-Where all the compiled/minified code will go to deploy, i.e.: distribuition.
-Or it can be build too.
